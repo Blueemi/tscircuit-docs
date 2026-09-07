@@ -55,12 +55,8 @@ down a signal, but the resistor is non-polar so `pos`/`neg` are meaningless.
 :::
 ## Tolerances
 
-Resistors can be made to different tolerances. In particular, you might care
-about the following resistor characteristics:
-
-- **tolerance** - a percentage given with a string, e.g. `tolerance="5%"`. This specifies how accurate the resistance needs to be
-- **powerRating** - a wattage e.g. "5W" indicating how much power can transfer through the resistor for normal operation
-- **temperatureOperatingRange** - a string indicating the listed range for the resistor's operating temperature `"-15F-150F"`
+Use `tolerance` to specify the acceptable variation in resistance as a percentage
+string, e.g. `tolerance="5%"`, or a number between 0 and 1, e.g. `tolerance={0.05}`.
 
 ## Resistor Properties
 
